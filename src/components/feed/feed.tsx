@@ -25,7 +25,6 @@ export default function Feed({ photos, user }: DataRecive) {
 
   const fetching = React.useRef(false);
   function infiniteScroll() {
-    console.log('aconteceu');
     if (fetching.current) return;
     fetching.current = true;
     setLoading(true);
